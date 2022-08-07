@@ -8,11 +8,14 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <ChakraProvider resetCSS theme={theme}>
       <Head>
-        <title>NextJS with Chakra-ui Boilerplate</title>
-        <link rel="shortcut icon" href="/img/chakra-logo.png" />
-        <link rel="apple-touch-icon" href="/img/chakra-logo.png" />
+        <title>Colonize Mars | Blockchain Strategy Game</title>
+        <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <link rel="manifest" href="/manifest.json" />
-        <meta name="description" content="NextJS with Chakra-ui Boilerplate" />
+        <meta
+          name="description"
+          content="Colonize Mars | Blockchain Strategy Game"
+        />
       </Head>
 
       <Component {...pageProps} />
