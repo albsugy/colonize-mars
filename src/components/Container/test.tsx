@@ -6,10 +6,10 @@ describe('<Container/ >', () => {
   it('should render with children', () => {
     render(
       <Container>
-        <div data-testid="Mock Children" />
+        <div data-testid="Mock Element" />
       </Container>
     )
 
-    expect(screen.getByTestId('Mock Children')).toBeInTheDocument()
+    expect(screen.getByTestId('Mock Element')).toBeInTheDocument()
   })
 })

@@ -1,21 +1,7 @@
-import { Flex, useColorMode, FlexProps } from '@chakra-ui/react'
+import { Container as Wrapper, ContainerProps } from '@chakra-ui/react'
 
-const Container = (props: FlexProps) => {
-  const { colorMode } = useColorMode()
-
-  const bgColor = { light: 'gray.50', dark: 'gray.900' }
-  const color = { light: 'black', dark: 'white' }
-
-  return (
-    <Flex
-      direction="column"
-      alignItems="center"
-      justifyContent="flex-start"
-      bg={bgColor[colorMode]}
-      color={color[colorMode]}
-      {...props}
-    />
-  )
+const Container = (props: ContainerProps) => {
+  return <Wrapper maxW="8xl" px={[6, '30.5px']} color="white" {...props} />
 }
 
 export default Container
