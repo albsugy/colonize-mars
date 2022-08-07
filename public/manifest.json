@@ -1,15 +1,15 @@
 {
-  "name": "NextJS with Chakra-ui Boilerplate",
-  "short_name": "NextJS with Chakra-ui Boilerplate",
+  "name": "Colonize Mars | Blockchain Strategy Game",
+  "short_name": "Colonize Mars | Blockchain Strategy Game",
   "icons": [
     {
-      "src": "/img/chakra-logo.png",
+      "src": "/favicon.png",
       "type": "image/png",
       "sizes": "48x48"
     }
   ],
   "background_color": "#000",
-  "description": "NextJS with Chakra-ui Boilerplate",
+  "description": "Colonize Mars | Blockchain Strategy Game",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#000"
