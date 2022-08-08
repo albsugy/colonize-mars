@@ -20,6 +20,16 @@ import { TemplateGroupTableProps } from './types'
 const TemplateGroupTable: FC<TemplateGroupTableProps> = ({ data }) => {
   const modalContext = useContext(ModalContext)
 
+  if (!data || data.length < 1)
+    return (
+      <Box>
+        <Text fontSize="2xl" mt="12px" mb="23px" as="h1">
+          Resources
+        </Text>
+        <Text textAlign="center">No resources available.</Text>
+      </Box>
+    )
+
   if (!modalContext) return null
   const { onOpen, setActiveTemplate } = modalContext
 
@@ -123,7 +133,7 @@ const TemplateGroupTable: FC<TemplateGroupTableProps> = ({ data }) => {
                 }
               }}
             >
-              {data?.map((template: NormalizedTemplateGroup, tid) => {
+              {data.map((template: NormalizedTemplateGroup, tid) => {
                 return (
                   <Tr
                     key={tid}
