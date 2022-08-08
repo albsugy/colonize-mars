@@ -17,15 +17,19 @@ import { openSFX, hoverSFX } from 'utils/sound-effects'
 
 import { TemplateGroupTableProps } from './types'
 
+const TableTitle: FC = () => (
+  <Text fontSize="2xl" mt="12px" mb="23px" as="h1">
+    Resources
+  </Text>
+)
+
 const TemplateGroupTable: FC<TemplateGroupTableProps> = ({ data }) => {
   const modalContext = useContext(ModalContext)
 
   if (!data || data.length < 1)
     return (
       <Box>
-        <Text fontSize="2xl" mt="12px" mb="23px" as="h1">
-          Resources
-        </Text>
+        <TableTitle />
         <Text textAlign="center">No resources available.</Text>
       </Box>
     )
@@ -35,10 +39,7 @@ const TemplateGroupTable: FC<TemplateGroupTableProps> = ({ data }) => {
 
   return (
     <Fragment>
-      <Text fontSize="2xl" mt="12px" mb="23px" as="h1">
-        Resources
-      </Text>
-
+      <TableTitle />
       <Flex w="full" justifyContent="center" as="main">
         <Box
           overflowY="auto"
